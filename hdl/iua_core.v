@@ -113,7 +113,7 @@ module iua_core (
 
 				2'b01: begin
 					out0_count_2 <= count_1 + 1;
-					out0_big_2   <= (count_1 + 1) > 63;
+					out0_big_2   <= count_1 > 62;
 					out0_valid_2 <= 1'b1;
 					out1_valid_2 <= 1'b0;
 				end
